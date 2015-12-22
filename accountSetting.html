@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>羽球达人</title>
+		<link rel="stylesheet" media="screen" href="css/base.css" />
+		<!--<link rel="stylesheet" media="screen" href="css/mui.css" />-->
+		<link rel="stylesheet" media="screen" href="css/bootstrap.css" />
+	</head>
+	<style>
+		header { border-bottom: 1px solid #c8c8c8; }
+		header a {text-decoration: none;}
+		#step1 { 
+			background: url("img/statusbar_01.png"); 
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 240px 30px;
+		}
+	</style>
+	<body>
+		<header class="pt20 pb10">
+			<table width="100%">
+				<tbody>
+					<tr height="40px">
+						<td width="15%"></td>
+						<td class="tr"><p><img src="img/logo.png" width="40px" height="40px" /></p></td>
+						<td width="30%" class="tl f1d4"><p><span style="color:#18b4ed">&nbsp;羽球达人</span><span style="color:#c8c8c8">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span style="color:#323a45">账号设置</span></p></td>
+						<td width="30%" class="tr"><p><a href="#">登录</a><span style="color:#c8c8c8">&nbsp;|&nbsp;</span><a href="#">注册</a></p></td>	
+						<td width="15%"></td>						
+					</tr>
+				</tbody>
+			</table>
+		</header>
+		<table width="100%" style="border-bottom:1px solid #c8c8c8">
+			<tbody>
+				<tr height="40px">
+					<td width="15%"></td>
+					<td width="40px"></td>
+					<td width="30%" class="f1d2">&nbsp;找回密码</td>
+					<td width="30%"></td>
+					<td width="15%"></td>
+				</tr>
+			</tbody>
+		</table>
+		<main role="main">
+			<div class="container mt40">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<div class="col-xs-offset-2">
+							<table class="tc mb10" cellspacing="0px">
+								<tbody>
+									<tr height="40px" style="line-height:40px">
+										<td width="240px" id="step1"><img src="img/blue_num_1.png" /><span class="f1d1" style="color:#18b4ed;">&nbsp;&nbsp;确认账号</span></td>
+										<td width="240px" id="step2"><img src="img/grey_num_2.png" /><span class="f1d1" style="color:#666666;">&nbsp;&nbsp;安全验证</span></td>
+										<td width="240px" id="step3"><img src="img/grey_num_3.png" /><span class="f1d1" style="color:#66666;">&nbsp;&nbsp;重置密码</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<label for="useraccount" class="col-xs-offset-2 mb10">请填写您需要找回的账号</label>
+					<div class="form-group">
+						<div class="col-xs-offset-2 col-xs-6">
+							<input type="email" class="form-control" id="useraccount" placeholder="请输入账号">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-offset-2 col-xs-3">
+							<input type="text" class="form-control" id="validatecode" placeholder="请输入验证码">
+						</div>
+						<img src="#" width="80px" height="35px" />&nbsp;&nbsp;
+						<a href="#" style="color:#18b4ed">换一张</a>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-offset-2 col-xs-4">
+							<button type="submit" class="btn btn-default btn-block btn-lg" style="background-color:#18b4ed; border-color:#18b4ed; color:#fff;">下一步</button>
+						</div>
+					</div>
+				</form>			
+			</div>
+		</main>
+	</body>
+</html>
