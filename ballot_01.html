@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>羽球达人</title>
+		<link rel="stylesheet" media="screen" href="css/base.css" />
+		<!--<link rel="stylesheet" media="screen" href="css/mui.css" />-->
+		<link rel="stylesheet" media="screen" href="css/bootstrap.css" />
+	</head>
+	<style>
+		header { border-bottom: 1px solid #c8c8c8; }
+		header a {text-decoration: none;}
+		#step1 { 
+			background: url("img/statusbar_01.png"); 
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 240px 30px;
+		}
+		#navbarlist {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			padding-left: 15%;
+			overflow:hidden;
+			background-color: #323232;
+		}
+		#navbarlist li {
+			display: inline;
+			float: left;
+		}
+		#navbarlist a:link,a:visited {
+			display: block;
+			width:200px;
+			font-weight:bold;
+			color:#18b4ed;
+			background-color:#323232;
+			text-align:center;
+			padding:6px;
+			text-decoration:none;
+			text-transform:uppercase;
+		}
+		#navbarlist a:hover,a:active {
+			color:#fff;
+			background-color:#18b4ed;
+		}
+		#end {
+			height: 270px;
+			background: url(img/foot_01.png);
+			background-repeat: repeat-x;
+			background-position: bottom;
+		}
+		#copyright {
+			top:200px;
+		}
+		.names tr { height:40px; }
+		#navpage a { color:#18b4ed; }
+
+		footer { margin-top: 400px; }
+	</style>
+	<body>
+		<header class="pt20 pb10">
+			<table width="100%">
+				<tbody>
+					<tr height="40px">
+						<td width="15%"></td>
+						<td width="100px"><p><img src="img/bbs_logo.png" width="100px" height="40px" /></p></td>
+						<td class="tl f1d4"><p><span style="color:#000; font-weight:bold">&nbsp;半百体育</span></p></td>
+						<td class="tr"><p style="color:#323232;">当前登录用户：187****1111</p></td>	
+						<td width="15%"></td>						
+					</tr>
+				</tbody>
+			</table>
+		</header>
+		<ul id="navbarlist">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">查看赛事</a></li>
+			<li><a href="#">赛事管理</a></li>
+		</ul>
+		<main role="main">
+			<div style="margin-left:15%; margin-right:15%;">
+				<ol class="breadcrumb mt5 mb5" style="background-color:#fff;">
+				  	<li class="active">首页</li>
+				  	<li class="active">查看赛事</li>
+				  	<li class="active">我要报名</li>
+				  	<li class="active">好友列表</li>
+				</ol>
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6">
+							<h1 class="f1d3 tc" style="color:#323232;font-weight:normal;">报名名单</h1>
+							<iframe src="nameList_as_iframe.html" width="100%" height="500" style="border:none"></iframe>
+						</div>
+						<div class="col-xs-6">
+							<h1 class="f1d3 tc" style="color:#323232;font-weight:normal;">分组抽签</h1>
+							<iframe src="ballot_as_iframe.html" width="100%" height="500" style="border:none"></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div class="tc" id="navpage">
+					<nav>
+					  	<ul class="pagination">
+					    	<li>
+					      		<a href="#" aria-label="Previous">
+					        		<span aria-hidden="true"><<&nbsp;上一页</span>
+					      		</a>
+					    	</li>
+					    	<li><a href="#">队员名单</a></li>
+					    	<li><a href="#" style="color:#c8c8c8">分组排位</a></li>
+					    	<li><a href="#">比赛编号</a></li>
+					    	<li><a href="#">赛程编排</a></li>
+					    	<li><a href="#">裁判管理</a></li>
+					    	<li><a href="#">成绩展示</a></li>
+					    	<li>
+					      		<a href="#" aria-label="Next">
+					        		<span aria-hidden="true">下一页&nbsp;>></span>
+					      		</a>
+					    	</li>
+					  </ul>
+					</nav>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div id="end" class="pr">
+				<img src="img/foot_02.png" width="100%" />
+				<div id="copyright" class="tc pr" style="color:#fff">半百体育科技有限公司版权所有<br />Copyright &copy; 2015 Banbai All rights Reserved</div>
+			</div>
+		</footer>
+	</body>
+</html>
