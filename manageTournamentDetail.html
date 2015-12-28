@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>羽球达人</title>
+		<link rel="stylesheet" media="screen" href="css/base.css" />
+		<!--<link rel="stylesheet" media="screen" href="css/mui.css" />-->
+		<link rel="stylesheet" media="screen" href="css/bootstrap.css" />
+	</head>
+	<style>
+		header { border-bottom: 1px solid #c8c8c8; }
+		header a {text-decoration: none;}
+		#step1 { 
+			background: url("img/statusbar_01.png"); 
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 240px 30px;
+		}
+		#navbarlist {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			padding-left: 15%;
+			overflow:hidden;
+			background-color: #323232;
+		}
+		#navbarlist li {
+			display: inline;
+			float: left;
+		}
+		#navbarlist a:link,a:visited {
+			display: block;
+			width:200px;
+			font-weight:bold;
+			color:#18b4ed;
+			background-color:#323232;
+			text-align:center;
+			padding:6px;
+			text-decoration:none;
+			text-transform:uppercase;
+		}
+		#navbarlist a:hover,a:active {
+			color:#fff;
+			background-color:#18b4ed;
+		}
+		#end {
+			height: 270px;
+			background: url(img/foot_01.png);
+			background-repeat: repeat-x;
+			background-position: bottom;
+		}
+		#copyright {
+			top:200px;
+		}
+		.names tr { height:40px; }
+		#navpage a { color:#18b4ed; }
+
+		footer { margin-top: 400px; }
+	</style>
+	<body>
+		<header class="pt20 pb10">
+			<table width="100%">
+				<tbody>
+					<tr height="40px">
+						<td width="15%"></td>
+						<td width="100px"><p><img src="img/bbs_logo.png" width="100px" height="40px" /></p></td>
+						<td class="tl f1d4"><p><span style="color:#000; font-weight:bold">&nbsp;半百体育</span></p></td>
+						<td class="tr"><p><a href="#">登录</a><span style="color:#c8c8c8">&nbsp;|&nbsp;</span><a href="#">注册</a></p></td>	
+						<td width="15%"></td>						
+					</tr>
+				</tbody>
+			</table>
+		</header>
+		<ul id="navbarlist">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">查看赛事</a></li>
+			<li><a href="#">赛事管理</a></li>
+		</ul>
+		<main role="main">
+			<div style="margin-left:15%; margin-right:15%;">
+				<ol class="breadcrumb mt5 mb5" style="background-color:#fff;">
+				  	<li class="active">首页</li>
+				  	<li class="active">查看赛事</li>
+				  	<li class="active">我要报名</li>
+				  	<li class="active">好友列表</li>
+				</ol>
+
+				<div class="panel panel-default" style="border:1px solid #18b4ed">
+				  	<div class="panel-heading" style="background-color:#18b4ed; color:#fff;">
+				  		<span>选择从属比赛</span>		
+					</div>
+				  	<div class="panel-body">
+				  		<table width="100%">
+				  			<thead>
+				  				<tr>
+				  					<td><img src="img/check_success_green.png" />&nbsp;老年组男单</td>
+				  					<td><img src="img/check_green.png" />&nbsp;老年组女单</td>
+				  					<td><img src="img/check_green.png" />&nbsp;老年组男双</td>
+				  					<td><img src="img/check_green.png" />&nbsp;专业组女单</td>
+				  					<td><img src="img/check_green.png" />&nbsp;业余组男双</td>
+				  					<td><img src="img/check_green.png" />&nbsp;教工组团体</td>
+				  				</tr>
+				  			</thead>
+				  		</table>
+					</div>
+					<div class="panel-footer" style="border-top: 1px dashed #c8c8c8; background-color:#fff;">
+						<div class="panel panel-default">
+							<div class="panel-heading" style="background-color:#ff8800; color:#fff;">
+								<span>老年组男单（89）</span>
+								<span class="fr"><img src="img/pulldown.png" /></span>
+							</div>
+							<div class="panel-body">
+								<table width="100%" class="tc names">
+									<tbody>
+										<tr>
+											<td>梁朝伟</td>
+											<td>林丹</td>
+											<td>周润发</td>
+											<td>张子强</td>
+											<td>刘烨</td>
+											<td>李大钊</td>
+											<td>洪金宝</td>
+											<td>成龙</td>
+										</tr>
+										<tr>
+											<td>梁朝伟</td>
+											<td>林丹</td>
+											<td>周润发</td>
+											<td>张子强</td>
+											<td>刘烨</td>
+											<td>李大钊</td>
+											<td>洪金宝</td>
+											<td>成龙</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading" style="background-color:#ff8800; color:#fff;">
+								<span>老年组女单（89）</span>
+								<span class="fr"><img src="img/pulldown.png" /></span>
+							</div>
+							<div class="panel-body">
+								<table width="100%" class="tc names">
+									<tbody>
+										<tr>
+											<td>梁朝伟</td>
+											<td>林丹</td>
+											<td>周润发</td>
+											<td>张子强</td>
+											<td>刘烨</td>
+											<td>李大钊</td>
+											<td>洪金宝</td>
+											<td>成龙</td>
+										</tr>
+										<tr>
+											<td>梁朝伟</td>
+											<td>林丹</td>
+											<td>周润发</td>
+											<td>张子强</td>
+											<td>刘烨</td>
+											<td>李大钊</td>
+											<td>洪金宝</td>
+											<td>成龙</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading" style="background-color:#ff8800; color:#fff;">
+								<span>老年组男双（89）</span>
+								<span class="fr"><img src="img/pulldown.png" /></span>
+							</div>
+							<div class="panel-body">
+								<table width="100%" class="tc names">
+									<tbody>
+										<tr>
+											<td>梁朝伟/王宝强</td>
+											<td>林丹/乔丹</td>
+											<td>周润发/徐强</td>
+											<td>张子强/吾先生</td>
+											<td>刘烨/成龙</td>
+										</tr>
+										<tr>
+											<td>梁朝伟/刘德华</td>
+											<td>林丹/张学友</td>
+											<td>周润发/黎明</td>
+											<td>张子强/郭富城</td>
+											<td>刘烨/诺一</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tc" id="navpage">
+					<nav>
+					  	<ul class="pagination">
+					    	<li>
+					      		<a href="#" aria-label="Previous">
+					        		<span aria-hidden="true"><<&nbsp;上一页</span>
+					      		</a>
+					    	</li>
+					    	<li><a href="#">队员名单</a></li>
+					    	<li><a href="#">分组排位</a></li>
+					    	<li><a href="#">比赛编号</a></li>
+					    	<li><a href="#">赛程编排</a></li>
+					    	<li><a href="#">裁判管理</a></li>
+					    	<li><a href="#">成绩展示</a></li>
+					    	<li>
+					      		<a href="#" aria-label="Next">
+					        		<span aria-hidden="true">下一页&nbsp;>></span>
+					      		</a>
+					    	</li>
+					  </ul>
+					</nav>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div id="end" class="pr">
+				<img src="img/foot_02.png" width="100%" />
+				<div id="copyright" class="tc pr" style="color:#fff">半百体育科技有限公司版权所有<br />Copyright &copy; 2015 Banbai All rights Reserved</div>
+			</div>
+		</footer>
+	</body>
+</html>
